@@ -9,7 +9,7 @@ File and folder structure:
 Extract some mp4 and run `detector proceed <name>` or `detector init <name>`
 
 2. [cameras](./cameras) -- list of compressed camera with traffic lights
-3. [docs](./docs) -- some literature
+3. [docs](./docs) -- some literature and image for this file
 4. [motion-detector](./motion-detector) -- detect traffic light moving based on Lucas Kanade optical flow
 
 Copy extracted tf2.mp4 to motion-detector and run `main.py`
@@ -24,6 +24,16 @@ Copy extracted tf2.mp4 to tracks and run `SIFT_track.py`
 
 Copy extracted tf2.mp4 to stabilize and run `lk_stabilize.py`
 
-7. [result](./result) -- result videos
+7. [foreground-extract](./foreground-extract) -- Foreground Extraction using GrabCut Algorithm
+
+Copy extracted tf2.mp4 to stabilize and run `foreground-extract.py`
+
+8. [template-matching](./template-matching) -- Template matching Algorithm
+
+Copy extracted tf2.mp4 to stabilize and run `template-matching.py`
+
+9. [result](./result) -- result videos
 
 You can see short experiments results on the video
+
+![](./docs/demo.png)
